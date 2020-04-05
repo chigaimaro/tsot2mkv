@@ -1,6 +1,15 @@
+from tsotmkvlib import cavlog
+
+
 def main():
-    pass
-    # TODO Setup logging
+    """
+    Main Program loop
+    :return:
+    """
+
+    log = cavlog.build_cavlog('DEBUG')
+    log.info("Log file initialized")
+    # TODO check version of Python
 
 
 if __name__ == '__main__':
