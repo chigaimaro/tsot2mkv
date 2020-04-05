@@ -1,4 +1,4 @@
-from tsotmkvlib import cavlog
+from tsotmkvlib import cavlog, cavsys
 
 
 def main():
@@ -8,8 +8,7 @@ def main():
     """
 
     log = cavlog.build_cavlog('DEBUG')
-    log.info("Log file initialized")
-    # TODO check version of Python
+    cavsys.check_py_version()
 
 
 if __name__ == '__main__':
