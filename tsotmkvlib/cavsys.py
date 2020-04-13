@@ -7,9 +7,8 @@ log = logging.getLogger(__name__)
 # Check Python Version
 def check_py_version():
     log.info("Checking version of Python")
-    py_version = sys.version_info
-    log.debug(py_version)
-    if py_version[0] < 3 or py_version[1] < 7:
+    log.debug(sys.version_info)
+    if sys.version_info[0] < 3 or sys.version_info[1] < 7:
         exit_on_critical("Please update your version of Python to at least 3.7.1")
     else:
         log.info("Python version check passes..")
